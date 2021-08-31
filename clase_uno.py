@@ -96,3 +96,41 @@ print(type(y))
 a = 'Hola'
 b = 'Mundo'
 c = a + ' ' + b
+
+a = 'hola'
+b = a * 5
+
+# CAPTURAR POR PANTALLA
+nombre = input('Digite su nombre: ')
+print('Hola', nombre)
+
+print('Digite su nombre: ')
+nombre = input()
+print('Hola', nombre)
+
+# EJERCICIOS
+# 1. Haga un algoritmo que sume dos números e imprima su resultado
+n1 = input('Numero #1 ')
+n2 = input('Numero #2 ')
+suma = float(n1) + float(n2)
+print('La suma de', n1, '+', n2, 'es: ', suma)
+
+n1 = float(input('Number 1 '))
+n2 = float(input('Number 2 '))
+print(f'La suma de {n1} + {n2} es {n1+n2}')
+
+# 2. Haga un algoritmo que lea un numero y lo eleve al cuadrado
+n = float(input('Ingrese su numero: '))
+r = n ** 2
+print(f'El cuadrado de {n} es {r}')
+
+# 3. Haga un algoritmo que tome el valor de un producto
+#    Le aplique el 20%, imprimar valor inicial
+#    valor con descuento y valor final
+
+vproducto = float(input('Ingrese el valor del producto $'))
+descuento = vproducto * 0.20
+vfinal = vproducto - descuento
+print(f'El valor inicial del producto es ${vproducto:,}')
+print(f'El valor del descuento es ${descuento:,}')
+print(f'El valor final del producto es ${vfinal:,}')
