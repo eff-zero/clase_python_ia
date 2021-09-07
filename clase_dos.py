@@ -84,3 +84,35 @@ elif (n < 0):
     print('Su número es negativo')
 else:
     print(f'Su número es {n}')
+
+# CICLOS
+
+# Ciclo for
+for valor in range(11):
+    print(valor)
+for valor in range(11):
+    print(valor)
+    print(valor + 1)
+
+for valor in range(1, 11):
+    print(valor)
+
+for valor in range(2, 11, 2):
+    print(valor)
+
+# Lazy Iterable
+# range(0, 11) = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# range(2, 11, 2) = [2, 4, 6, 8, 10]
+
+# HUA que lea n nota y calcule el promedio académico al final
+cantidad_notas = int(input('Ingrese el número de notas que va a promediar: '))
+suma_notas = 0
+if (cantidad_notas > 0):
+    for x in range(cantidad_notas):
+        x = float(input(f'Ingrese la nota #{x + 1}: '))
+        suma_notas = suma_notas + x
+    promedio = suma_notas / cantidad_notas
+    promedio = round(promedio, 2)
+    print(f'Su promedio es {promedio}')
+else:
+    print('El número de notas debe ser 0')
