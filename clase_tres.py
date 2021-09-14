@@ -8,12 +8,11 @@ Created on Mon Sep 13 19:27:29 2021
 
 # Tipos de Colecciones - Clase #3
 
-# Listas o vectores
+# LISTAS O VECTORES
 # Tipos de dato mutable y ordenado
-
-a = [5, 6, 1, 2, 5, 9, 8, 3, 0]
+a = [1, 2, 3, 4]
 b = [2, True, 'Hola', 3.4]
-c = [2, [3, 4], ['Hola', 'Mundo'], [2.3, [2.4, 2.5], 2.6]]
+c = [2, [3, 4], ['Hola', 'Mundo'], [2.3, [2, 5, 7], 2.6]]
 
 for valor in a:
     print(valor)
@@ -45,3 +44,22 @@ b = a[0:3]
 b = a[2:7]
 b = a[:6]
 b = a[1:]
+
+b = c[3][1][:2]
+
+
+# TUPLA
+# Tipo de dato INMUTABLE (Su valor no cambia en el tiempo) y ordenado
+a = (1, 2, 3, 4)
+print(a[1])
+b = (2, True, 'Hola', 3.4)
+c = (2, [3, 4], ['Hola', 'Mundo'], [2.3, [2, 5, 7], 2.6])
+4 in a
+
+
+# SET (No es diccionario)
+# Tipo de dato mutable pero NO ordenado
+a = {1, 2, 3, 4}
+b = {2, True, 'Hola', 3.4}
+c = (2, [3, 4], ['Hola', 'Mundo'], [2.3, [2, 5, 7], 2.6])  # No permite vectores en su interior 
+4 in a
