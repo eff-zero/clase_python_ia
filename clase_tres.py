@@ -63,3 +63,21 @@ a = {1, 2, 3, 4}
 b = {2, True, 'Hola', 3.4}
 c = (2, [3, 4], ['Hola', 'Mundo'], [2.3, [2, 5, 7], 2.6])  # No permite vectores en su interior 
 4 in a
+
+# DICCIONARIO
+# Mutable y NO ordenado
+a = {'nombre': 'Jesús', 'apellido': 'Hernández'}
+a = {1: 'Jesús', 2: 'Hernández'}
+a['nombre']
+
+for valor in a:
+    print(valor)
+
+for valor in a.values():
+    print(valor)
+
+for valor in a.items():
+    print(valor)  # Retorna tuplas
+
+for llave, valor in a.items():
+    print(f'Llave: {llave}, Valor: {valor}')
